@@ -1,0 +1,141 @@
+body{
+    background-color:#FFFFFF;
+    margin: 0 !important;
+    padding:0 !important;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0 !important;
+    padding-block: inherit;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.linner{
+    margin: auto;
+    width: 900px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.linner .logo{
+    width: 100px;
+}
+
+.linner .logo a img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.linner ul{
+    margin-top: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    line-height: 39px;
+}
+
+.linner ul li{
+    display: flex;
+    gap: 10px;
+}
+
+.linner ul li a{
+    color: darkgreen;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.home
+{
+    width: 900px;
+    margin: auto;
+    background: #FFFFFF;
+}
+
+.home{
+    width: 500px;
+    margin: auto;
+    background: #FFFFFF;
+    display: flex;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #a9c971;
+    text-transform: capitalize;
+}
+
+.box__services{
+    display: flex;
+    gap: 80px;
+    position: relative;
+}
+
+.img__flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    position: relative;
+}
+
+.icon__more{
+color: darkgreen;
+    font-size: 20px;
+    position: absolute;
+    left: 148%;
+    top: 29%;
+    text-transform: capitalize;
+}
+
+.box__card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.box__card h1{
+    font-size: 11px;
+}
+
+.expert__element{
+    background-color: #F3F5F4;
+    margin: auto;
+    width: 1236px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.right__element .img__right__box{
+position: relative;
+}
+
+.right__element .img__right__box:before{
+    position: absolute;
+    content: "";
+    background-color: #A5C66A;
+    width: 600px;
+    height: 700px;
+    z-index: 1;
+}
+
+.img__right__box  img{
+    width: 100%;
+    object-fit: cover;
+    height: 656px;
+    z-index: 2;
+    position: relative;
+}
