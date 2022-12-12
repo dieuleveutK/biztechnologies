@@ -1,25 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}biztechnologies{% endblock %}
 
 {% block body %}
     <div class="wrapper">
-        <div class="header">
-            <div class="linner">
-                <div class="logo">
-                    <a href="">
-                        <img src="{{ asset('build/images/lo.png') }}" alt=""></a>
-                </div>
-                <ul>
-                    <li><a href="">Acceuil</a></li>
-                    <li><a href="">Services d'Identification</a></li>
-                    <li><a href="">web services</a></li>
-                    <li><a href="">gestion documentaire</a></li>
-                    <li><a href="">Apropos</a></li>
-                    <li><a href="">contact</a></li>
-                </ul>
-            </div>
-        </div>
+        {% include'home/__header.html.twig' %}
         <section>
             <div class="bg__home xld__web">
                 <div class="center__about">

@@ -1,151 +1,187 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}biztechnologies{% endblock %}
 
 {% block body %}
     <div class="wrapper">
-        <div class="header">
-            <div class="linner">
-                <div class="logo">
-                    <a href="">
-                        <img src="{{ asset('build/images/l.png') }}" alt=""></a>
-                </div>
-                <ul>
-                    <li><a href="">Acceuil</a></li>
-                    <li><a href="">Services d'Identification</a></li>
-                    <li><a href="">web services</a></li>
-                    <li><a href="">gestion documentaire</a></li>
-                    <li><a href="">Apropos</a></li>
-                    <li><a href="">contact</a></li>
-                </ul>
-            </div>
-        </div>
+        {% include'home/__header.html.twig' %}
         <section>
-            <div class="bg__home  contact__xlf">
+            <div class="bg__home klx__lim">
                 <div class="center__about">
-                    <h3>CONTACTEZ -NOUS</h3><br><br>
-                    <p>BIZTECHNOLOGIES</p>
+                    <h3 style="position: relative; z-index: 1;color: #FFFFFF;">Identification & Verification </h3>
 
                 </div>
-            </div>
-        </section>
-
-        <section class="xld__real">
-            <div class="item">
-                <h3>Entrez en contact avec nous</h3>
-            </div>
-            <div class="item">
-                <p>Veuillez trouver ci-dessous les coordonnées et contactez-nous dès aujourd’hui!</p>
             </div>
         </section>
         <section>
-            <div class="center__contact">
-                <div class="box__contact">
-                    <div class="icon__contact__img">
-                        <div class="images__icon">
-                            <img src="{{ asset('build/images/loca.png') }}" alt="">
-                        </div>
+            <div class="service__element">
+                <div class="left__services">
+                    <div class="buld__element">
+                        <h6>Le SEO</h6>
+                        <p>
 
+                            Biztechnologies optimise votre visibilité dans les principaux moteurs de recherche tels que Google, Yahoo, Bing, etc.
+
+                            Il s’agit de bien équilibrer l’utilisation des mots-clés dans votre contenu et d’utiliser un champ lexical riche et varié afin de satisfaire autant les moteurs de recherche que l’humain qui se cache derrière votre cible. Vous devez vous assurer de les placer stratégiquement. Mais où?<br><br>
+
+                            Nul besoin de dire qu’il faut y apparaître, sinon vous sombrerez loin des premiers résultats de recherche et personne ne consultera votre site. Biztechnologies vous aide à y arriver
+                        </p>
                     </div>
-                    <div class="contact__text colox">Address</div>
-                    <div class="contact__text ">Avenue du port, 17
-                        Kinshasa, RD Congo</div>
+
                 </div>
-                <div class="box__contact">
-                    <div class="icon__contact__img">
-                        <div class="images__icon">
-                            <img src="{{ asset('build/images/loca.png') }}" alt="">
-                        </div>
-
+                <div class="right__services">
+                    <div class="img__right xld__img">
+                        <img class="relative__22" src="/build/images/p.jpg" alt="">
                     </div>
-                    <div class="contact__text colox">Phone</div>
-                    <div class="contact__text">RDC : +243 823142422</div>
-                </div>
-                <div class="box__contact">
-                    <div class="icon__contact__img">
-                        <div class="images__icon">
-                            <img src="{{ asset('build/images/loca.png') }}" alt="">
-                        </div>
-
-                    </div>
-                    <div class="contact__text colox">E-mail</div>
-                    <div class="contact__text">info@biztechnologies.biz</div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="center__contact">
-                <div class="box__contact">
-                    <div class="icon__contact__img">
-                        <div class="images__icon">
-                            <img src="{{ asset('build/images/facebook.png') }}" alt="">
-                        </div>
-
+            <div class="ider__outer">
+                <div class="box__element__outer">
+                    <div class="icon__eelement">
+                        <img src="/build/images/d1.png" alt="">
                     </div>
-
-                    <div class="contact__text ">Facebook</div>
+                    <div class="boxy__element">
+                        <h4>Investissement</h4>
+                        <p>Il ne faut pas voir la réalisation d’un site Internet comme une dépense mais plutôt un investissement à court et moyen terme.</p>
+                    </div>
                 </div>
-                <div class="box__contact">
+                <div class="box__element__outer">
+                    <div class="icon__eelement">
+                        <img src="/build/images/d2.png" alt="">
+                    </div>
+                    <div class="boxy__element">
+                        <h4>Disponibilité</h4>
+                        <p>Votre site Web restera en ligne 365 jours par année tandis qu’une publicité traditionnelle ne durera que quelques secondes ou au mieux quelques jours.</p>
+                    </div>
+                </div>
+                <div class="box__element__outer">
+                    <div class="icon__eelement">
+                        <img src="/build/images/d2.png" alt="">
+                    </div>
+                    <div class="boxy__element">
+                        <h4>Nouvelle Clientèle</h4>
+                        <p>De plus en plus de consommateurs magasinent sur Internet avant de se présenter dans les lieux physiques de votre entreprise.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="id__section">
+            <div class="our__product">
+                <h5>Our PRODUCT</h5>
+                <p><strong>BizTechnologie's</strong> biometric and smart card products are accepted as a form of electronic identification that is not Anly secure and reliable, but also offers one of the best technologies available today through close partnership with industry leaders.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="box__iden">
+                <div class="box__isde">
                     <div class="icon__contact__img">
                         <div class="images__icon">
-                            <img src="{{ asset('build/images/twitter.png') }}" alt="">
+                            <img src="/build/images/d3.png" alt="">
                         </div>
 
                     </div>
 
                     <div class="contact__text">Twitter</div>
                 </div>
-                <div class="box__contact">
+                <div class="box__isde">
                     <div class="icon__contact__img">
                         <div class="images__icon">
-                            <img src="{{ asset('build/images/youtube.png') }}" alt="">
+                            <img src="/build/images/d4.png" alt="">
                         </div>
 
                     </div>
 
-                    <div class="contact__text">YouTube</div>
+                    <div class="contact__text">Twitter</div>
                 </div>
-                <div class="box__contact">
+                <div class="box__isde">
                     <div class="icon__contact__img">
                         <div class="images__icon">
-                            <img src="{{ asset('build/images/linkedin.png') }}" alt="">
+                            <img src="/build/images/d5.png" alt="">
                         </div>
 
                     </div>
 
-                    <div class="contact__text">LinkedIn</div>
+                    <div class="contact__text">Twitter</div>
                 </div>
-
-                <div class="box__contact">
+                <div class="box__isde">
                     <div class="icon__contact__img">
                         <div class="images__icon">
-                            <img src="{{ asset('build/images/whatsapp.png') }}" alt="">
+                            <img src="/build/images/d6.png" alt="">
                         </div>
 
                     </div>
-                    <div class="contact__text colox">E-mail</div>
-                    <div class="contact__text">+243 992055103</div>
+
+                    <div class="contact__text">Twitter</div>
+                </div>
+                <div class="box__isde">
+                    <div class="icon__contact__img">
+                        <div class="images__icon">
+                            <img src="/build/images/d7.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="contact__text">Twitter</div>
+                </div>
+                <div class="box__isde">
+                    <div class="icon__contact__img">
+                        <div class="images__icon">
+                            <img src="/build/images/d8.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="contact__text">Twitter</div>
+                </div>
+                <div class="box__isde">
+                    <div class="icon__contact__img">
+                        <div class="images__icon">
+                            <img src="/build/images/d9.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="contact__text">Twitter</div>
+                </div>
+                <div class="box__isde">
+                    <div class="icon__contact__img">
+                        <div class="images__icon">
+                            <img src="/build/images/d10.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="contact__text">Twitter</div>
                 </div>
             </div>
         </section>
 
-        <section class="xld__real oxl">
-            <div class="item lkd">
-                <h3 class="alm__text">N’hésitez pas à nous joindre.</h3>
+        <section class="color__grade">
+            <div class="flex__element">
+                <h4>OUR PRODUCT</h4>
+                <div>Discover the product of website</div>
+                <div class=""><p>BizTechnolie's products</p></div>
             </div>
 
 
 
-
         </section>
-        <section class="carte">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3978.584689677356!2d15.309139999999998!3d-4.300541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a338b3dce3137%3A0xdc13219bc5bc68d2!2s17%20Ave%20Du%20Port%2C%20Kinshasa%2C%20R%C3%A9publique%20d%C3%A9mocratique%20du%20Congo!5e0!3m2!1sfr!2sus!4v1670856292334!5m2!1sfr!2sus" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        </section>
+
         <section class="t__footer xld__footer">
 
         </section>
+
+
+
+
+
+
     </div>
 
 {% endblock %}
